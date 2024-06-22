@@ -13,4 +13,9 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.5.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PREFINALS_AUTH_RODEJO_VARON\mvc.csproj" />
+    <ProjectReference Include="..\Protected API\Protected API.csproj" />
+  </ItemGroup>
+
 </Project>

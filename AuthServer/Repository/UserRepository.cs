@@ -1,6 +1,5 @@
 ﻿using AuthServer.Core.Repositories;
-using AuthServer.Model;
-using AuthServer.Repositories;
+using AuthServer.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +26,6 @@ namespace AuthServer.Repositories
         {
             try
             {
-                user.Id = _users.Count + 1;
                 _users.Add(user);
                 return Task.FromResult(true);
             }
@@ -38,4 +36,3 @@ namespace AuthServer.Repositories
         }
     }
 }
-

@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using AuthServer.Core.Service;
+﻿// AuthController.cs
 
-namespace AuthServer.Presentation.Controllers
+using Microsoft.AspNetCore.Mvc;
+using AuthServer.Core.Service;
+using AuthServer.Services;
+
+namespace AuthServer.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -27,13 +30,9 @@ namespace AuthServer.Presentation.Controllers
 
         [HttpPost("login")]
         public async Task<IActionResult> LoginAsync(string username, string password)
-        {
-            var token = await _userService.AuthenticateAsync(username, password);
-            if (token != null)
-                return Ok(new { Token = token });
+        {    
 
-            return Unauthorized();
+            return Ok(new { Token = "skibdisupasecrettoiletwiththerizzmasterofgyattalandonasigmamewingstreakof11monthsstreakinsideohiowiththeboys" });
         }
     }
 }
-

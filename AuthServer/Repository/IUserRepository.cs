@@ -1,4 +1,4 @@
-﻿using AuthServer.Model;
+﻿using AuthServer.Models;
 using System.Threading.Tasks;
 
 namespace AuthServer.Core.Repositories
@@ -9,4 +9,3 @@ namespace AuthServer.Core.Repositories
         Task<bool> AddUserAsync(User user);
     }
 }
-
