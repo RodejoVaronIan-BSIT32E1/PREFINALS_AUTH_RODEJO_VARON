@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using static AuthServer.Core.Service.IUserServices;
 using AuthServer.Core.Service;
 
 namespace AuthServer.Presentation.Controllers
